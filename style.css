@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Playfair+Display:ital,wght@1,600&family=Ysabeau+Office:wght@100;900&display=swap');
+body{
+   font-size: 1rem;
+   background-color: whitesmoke;
+   font-family: 'Playfair Display', serif;
+}
+header{
+    background-color: white;
+}
+button{
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid lightgray;
+    background-color: white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(0, 0, 0, 0.103);
+}
+.container{
+    width: 95%;
+    margin:auto
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    margin: auto;
+    background-color: white;
+    padding:20px 0;
+}
+.nav button{
+    font-family: inherit;
+}
+.create-box{
+    width: 380px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: whitesmoke;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.507);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.create-box textarea{
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-family: inherit;
+    border: 1px solid lightgray;
+}
+.create-box button{
+    width: fit-content;
+}
+.flashCards{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width:100%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+.flashCard{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.507);
+    word-wrap: break-word;
+    border-color: white;
+    margin: 10px;
+    height: 200px;
+    width: 370px;
+}
+.flashCard h2{
+    font-size: 1rem;
+}
+@media(max-width:768px){
+    .flashCard{
+        margin: auto;
+    }
+    .flashCard{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media(max-width:480px){
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+  .create-box{
+    width: 100%;
+  }
+  .flashCard{
+    width: 100%;
+  }
+}

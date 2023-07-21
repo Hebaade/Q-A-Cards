@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flash card</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav">
+                <h1>Q&A</h1>
+                <div>
+                    <button id="new">New Question Card</button>
+                <button id="del">Delete Questions Cards</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="create-box">
+            <h2 style="text-align:center">Create Q&A Cards</h2>
+            <label for="question">Question</label>
+            <textarea  id="question" ></textarea>
+            <br>
+            <label for="answer">Answer</label>
+            <textarea  id="answer" ></textarea>
+            <div>
+                <button id="save">Save</button>
+                <button id="close">Close</button>
+            </div>
+        </div>
+        <div class="flashCards">
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
